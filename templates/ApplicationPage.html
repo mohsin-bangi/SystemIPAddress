@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body bgcolor="#f5deb3">
+
+{% if dictionary %}
+    <h1 style="text-align: center">WELCOME : {{ dictionary.machineName }}</h1>
+    <br>
+    <h1 style="text-align: center">Machine IP Address is :{{ dictionary.machineIPAddress }}</h1>
+    <br>
+    <br>
+    <h1 style="text-align: center"><a href="{% url 'home' %}">Thank you</a></h1>
+
+{% endif %}
+
+<script>
+    document.addEventListener('contextmenu',function(event){
+        event.preventDefault();
+    })
+</script>
+</body>
+</html>
