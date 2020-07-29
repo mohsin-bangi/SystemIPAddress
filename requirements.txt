@@ -1,4 +1,4 @@
 render
 requirement
 socket
-django 2.0.13
+django==2.0.13
